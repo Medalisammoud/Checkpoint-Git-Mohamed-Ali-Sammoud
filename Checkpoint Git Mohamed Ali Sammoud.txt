@@ -1,0 +1,123 @@
+Microsoft Windows [version 10.0.19041.685]
+(c) 2020 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\ThinkPad>cd Desktop/learn_git_again
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git init
+Reinitialized existing Git repository in C:/Users/ThinkPad/Desktop/learn_git_again/.git/
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git init
+Reinitialized existing Git repository in C:/Users/ThinkPad/Desktop/learn_git_again/.git/
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git add third.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git commit -m "adding third.txt"
+[master (root-commit) 072caf8] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git add fourth.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git commit -m "adding fourth.txt"
+[master 4011386] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git rm third.txt
+rm 'third.txt'
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git add third.txt
+fatal: pathspec 'third.txt' did not match any files
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    third.txt
+
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git add .
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git commit -m "removing third.txt"
+[master f5b9f8a] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git log
+commit f5b9f8aee8c294b87ae11f9fd1ca40b868b7a2b6 (HEAD -> master)
+Author: Medalisammoud <76558883+Medalisammoud@users.noreply.github.com>
+Date:   Sat Jan 9 20:40:43 2021 +0100
+
+    removing third.txt
+
+commit 4011386b0c60248a1a973f62ab28780daf0dea7b
+Author: Medalisammoud <76558883+Medalisammoud@users.noreply.github.com>
+Date:   Sat Jan 9 19:29:34 2021 +0100
+
+    adding fourth.txt
+
+commit 072caf80fcf4575cd602060e84f81f2c7fb1da70
+Author: Medalisammoud <76558883+Medalisammoud@users.noreply.github.com>
+Date:   Sat Jan 9 19:03:22 2021 +0100
+
+    adding third.txt
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git config --global user.name "Mohamed Ali Sammoud"
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git config --global user.email Mohamed.Ali.Sammoud@gmail.com
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git config --global core.editor
+
+C:\Users\ThinkPad\Desktop\learn_git_again>git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\ThinkPad\Desktop\learn_git_again>
